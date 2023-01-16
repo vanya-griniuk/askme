@@ -2,4 +2,6 @@
 <p><%= @question.body %></p>
 <p>user_id: <b><%= @question.user_id %></b></p>
 
+<p><%= link_to 'Изменить вопрос', edit_question_path(@question) %></p>
+
 <p><%= link_to "Все вопросы", questions_path %></p>
