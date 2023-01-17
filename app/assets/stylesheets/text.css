@@ -19,6 +19,10 @@ a, button {
   font-size: 125%;
 }
 
-.title-sm {
+.text-sm {
   font-size: 80%;
+}
+
+.text-grey {
+  color: #a0a0a0;
 }
