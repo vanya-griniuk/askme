@@ -4,9 +4,9 @@
   <p class="mb-sm"><%= @question.body %></p>
   <p>user_id: <b><%= @question.user_id %></b></p>
 
-  <p class="mt"><%= link_to 'Изменить вопрос', edit_question_path(@question) %></p>
-  <div>
-  <%= button_to 'Удалить вопрос', question_path(@question), method: :delete %>
+  <div class="mt">
+    <%= link_to fa_icon('pencil'), edit_question_path(@question), title: 'Изменить вопрос' %>
+    <%= button_to fa_icon('trash-o'), question_path(@question), method: :delete, title: 'Удалить вопрос' %>
   </div>
 
   <p class="mt"><%= link_to "Все вопросы", questions_path %></p>

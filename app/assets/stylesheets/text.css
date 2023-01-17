@@ -3,7 +3,7 @@ body {
   font-family: 'Trebuchet MS', sans-serif;
 }
 
-a {
+a, button {
   color: #DC2F02;
 }
 
