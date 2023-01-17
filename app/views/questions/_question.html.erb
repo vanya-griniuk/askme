@@ -8,9 +8,9 @@
   </div>
 
   <div class="text-right">
-    <%= link_to fa_icon('pencil'), edit_question_path(@question),
+    <%= link_to fa_icon('pencil'), edit_question_path(question),
       title: 'Изменить вопрос' %>
-    <%= button_to fa_icon('trash-o'), question_path(@question),
+    <%= button_to fa_icon('trash-o'), question_path(question),
       method: :delete, title: 'Удалить вопрос' %>
   </div>
 </div>
