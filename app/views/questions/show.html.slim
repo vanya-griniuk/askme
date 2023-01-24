@@ -1,0 +1,7 @@
+.container
+  h2.title-lg.mb
+    | Вопрос 
+    - @question.id
+  = render 'question', question: @question
+  p.mt
+    = link_to "Все вопросы", questions_path

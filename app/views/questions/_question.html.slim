@@ -1,0 +1,8 @@
+.mb-sm
+  = question.body
+.text-sm.question-footer
+  .text-grey
+    = l(question.created_at, format: :short)
+  .text-right
+    = link_to fa_icon('pencil'), edit_question_path(question), title: 'Изменить вопрос'
+    = button_to fa_icon('trash-o'), question_path(question), method: :delete, title: 'Удалить вопрос'

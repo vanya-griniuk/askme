@@ -1,0 +1,19 @@
+.container
+  h2.title
+    | Присоединяйся и спраившивай!
+  .mt
+    = form_with model: @user do |form|
+      p
+        = form.label :name, 'Ваше имя'
+      p
+        = form.text_field :name, class: 'form-text-field'
+      p.mt
+        = form.label :nickname, 'Ник на сайте'
+      p
+        = form.text_field :nickname, class: 'form-text-field'
+      p.mt
+        = form.label :email
+      p
+        = form.text_field :email, class: 'form-text-field'
+      p.mt-lg
+        = form.submit 'Зарегестрироваться', class: 'button button-main'

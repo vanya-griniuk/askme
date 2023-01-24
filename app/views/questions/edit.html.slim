@@ -1,0 +1,5 @@
+.container
+  h2.title-lg.mb
+    | Редактирование вопроса 
+    - @question.id
+  = render 'form', question: @question

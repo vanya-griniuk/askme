@@ -1,0 +1,11 @@
+= form_with model: @question do |form|
+  p
+    = form.label :body, 'Тектс вопроса'
+  p
+    = form.text_area :body, rows: 5, class: 'form-text-area'
+  p.mt
+    = form.label :user_id
+  p
+    = form.text_field :user_id, class: 'form-text-field'
+  p.mt
+    = form.submit 'Сохранить', class: 'button button-main'

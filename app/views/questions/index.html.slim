@@ -1,0 +1,12 @@
+.container
+  p.mt
+    = link_to "Создать новый вопрос", new_question_path, class: 'button button-main'
+  p.mt
+    = render 'form', question: @question
+.container.mt-sm
+  h2.title-lg
+    = @questions.count
+    = inclination(@questions.count, 'вопрос', 'вопроса', 'вопросов')
+- @questions.each do |question|
+  .mt-sm.container
+    = render question

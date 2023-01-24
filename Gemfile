@@ -5,6 +5,10 @@ ruby "3.0.2"
 
 gem 'font-awesome-rails'
 
+gem "slim-rails"
+
+gem 'html2slim', '~> 0.2.0'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4"
 
